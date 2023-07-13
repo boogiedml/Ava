@@ -39,7 +39,7 @@ const AccommodationSearch = () => {
   };
 
   return (
-    <div className="max-w-3xl mx-auto bg-sub rounded-full">
+    <div className="max-w-3xl mx-auto bg-sub rounded-lg md:rounded-full">
       <div className="flex flex-col md:flex-row">
         <div className="w-full md:basis-2/6 text-text">
           <input
@@ -47,7 +47,7 @@ const AccommodationSearch = () => {
             value={location}
             onChange={handleLocationChange}
             placeholder="Enter location"
-            className="w-full px-3 ps-8 py-4 rounded-full outline-none bg-transparent hover:bg-white active:bg-white focus-within:bg-white transition-all duration-500"
+            className="w-full px-3 ps-8 py-4 rounded-lg md:rounded-full outline-none bg-transparent hover:bg-white active:bg-white focus-within:bg-white transition-all duration-500"
           />
         </div>
         <div className="w-full md:basis-1/6">
@@ -55,7 +55,7 @@ const AccommodationSearch = () => {
             selected={checkInDate}
             onChange={handleCheckInChange}
             dateFormat="MMM d"
-            className="w-full px-3 py-4 rounded-full outline-none bg-transparent hover:bg-white active:bg-white focus-within:bg-white transition-all duration-500"
+            className="w-full block px-3 py-4 rounded-lg md:rounded-full outline-none bg-transparent hover:bg-white active:bg-white focus-within:bg-white transition-all duration-500"
             placeholderText="Check in"
           />
         </div>
@@ -64,28 +64,28 @@ const AccommodationSearch = () => {
             selected={checkOutDate}
             onChange={handleCheckOutChange}
             dateFormat="MMM d"
-            className="w-full px-3 py-4 rounded-full outline-none bg-transparent hover:bg-white active:bg-white focus-within:bg-white transition-all duration-500"
+            className="w-full px-3 py-4 rounded-lg md:rounded-full outline-none bg-transparent hover:bg-white active:bg-white focus-within:bg-white transition-all duration-500"
             placeholderText="Check out"
           />
         </div>
-        <div className="bg-transparent flex w-full md:basis-2/6 rounded-full pe-2.5 hover:bg-white active:bg-white focus-within:bg-white">
-          <div className="w-full lg:basis-1/2">
+        <div className="bg-transparent flex w-full md:basis-2/6 rounded-lg md:rounded-full pe-2.5 hover:bg-white active:bg-white focus-within:bg-white">
+          <div className="w-full basis-1/2">
             <input
               type="number"
               min={1}
               max={10}
               value={guests}
               onChange={handleGuestsChange}
-              className="w-full px-3 py-4 rounded-full outline-none bg-transparent"
+              className="w-full px-3 py-4 rounded-lg md:rounded-full outline-none bg-transparent"
               placeholder="Guests"
             />
           </div>
           <button
             onClick={handleSearch}
-            className="lg:basis-1/2 bg-main text-sub text-sm font-semibold py-2 px-3 lg:px-4 my-2 rounded-full"
+            className="basis-1/2 bg-main text-sub text-sm font-semibold py-2 px-3 lg:px-4 my-2 rounded-full"
           >
-            <IoIosSearch className="block lg:hidden text-xl" />
-            <span className="hidden lg:block">Search</span>
+            <IoIosSearch className="hidden md:block lg:hidden text-xl" />
+            <span className="block md:hidden lg:block">Search</span>
           </button>
         </div>
       </div>

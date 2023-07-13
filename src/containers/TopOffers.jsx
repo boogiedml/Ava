@@ -75,7 +75,9 @@ const slidesPerView = isLargeScreen
 
   return (
     <section className="my-8 mx-6 md:mx-9 lg:mx-11 xl:mx-16">
-      <h2 className="text-4xl text-text font-semibold">Top offers</h2>
+      <h2 className="text-2xl md:text-3xl xl:text-4xl text-text font-semibold">
+        Top offers
+      </h2>
       <div className="mt-7">
         <Swiper
           slidesPerView={slidesPerView}

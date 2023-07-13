@@ -2,5 +2,11 @@
 
 body {
   font-family: "Space Grotesk", sans-serif;
-  background-color: #E4ECF2;
+  background-color: #e4ecf2;
+}
+
+.react-datepicker-wrapper {
+  display: block;
+  padding: 0;
+  border: 0;
 }

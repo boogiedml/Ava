@@ -31,9 +31,9 @@ const Faq = () => {
   };
 
   return (
-    <section className="mx-16 my-28 flex">
+    <section className="mx-6 md:mx-9 lg:mx-11 xl:mx-16 my-28 flex flex-col lg:flex-row">
       <div className="flex-1">
-        <h2 className="text-4xl text-text font-semibold mb-8 max-w-md">
+        <h2 className="text-2xl md:text-3xl xl:text-4xl text-text font-semibold mb-8 max-w-md">
           Frequently asked questions
         </h2>
       </div>

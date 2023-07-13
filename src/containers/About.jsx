@@ -21,9 +21,9 @@ const About = () => {
     },
   ];
   return (
-    <section className="my-8 mx-16 pt-28 flex">
-      <div className="basis-1/3">
-        <h2 className="text-4xl text-text font-semibold mb-8">
+    <section className="my-8 mx-6 md:mx-9 lg:mx-11 xl:mx-16 pt-28 flex flex-col xl:flex-row">
+      <div className="basis-1/3 mb-8 xl:mb-0">
+        <h2 className="text-2xl md:text-3xl xl:text-4xl text-text font-semibold mb-8">
           How Avacard works
         </h2>
         <Button
@@ -39,9 +39,9 @@ const About = () => {
             they have available rooms.
           </p>
         </div>
-        <div className="flex gap-8 mt-8">
+        <div className="flex flex-col lg:flex-row gap-8 mt-8">
           {how.map((h, i) => (
-            <div key={h.img + i} className="flex flex-col gap-7">
+            <div key={h.img + i} className="flex flex-col gap-7 text-center sm:text-left">
               <div className="w-52 h-52 bg-text bg-opacity-20 rounded-full">
                 <img
                   className="w-full h-full object-contain rounded-full"
