@@ -27,7 +27,6 @@ const AccommodationSearch = () => {
   };
 
   const handleSearch = () => {
-    // Perform search or other actions with selected values
     console.log("Check-in Date:", checkInDate);
     console.log("Check-out Date:", checkOutDate);
     console.log("Location:", location);
